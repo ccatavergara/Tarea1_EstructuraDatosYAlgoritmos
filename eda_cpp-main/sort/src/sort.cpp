@@ -79,15 +79,47 @@ namespace sort{
 		return k_smallest(A, 0, n-1, k);
 	}
 
-	void insertSort(int* A){
-		for(int i = 1; i< (sizeof(A)/sizeof(*A)); i++){
-			int elem = A[i];
-			int j = i - 1;
-			while( j > 0 && elem < A[j]){
-				A[j+1] = A[j];
-				j--;
+	void merge(float* A, int i, int j, int k){
+		int *A_aux = new int(sizeof(j - i + 1));
+		int q = 0;
+		int p1 = i;
+		int p2 = k+1;
+		while(p1 <= k && p2 <= j){
+			if(A[p1] <= A[p2]){
+				A_aux[q] = A[p1];
+				p1++;
 			}
-			A[j+1] = elem;
+			else{
+				A_aux[q] = A[p2];
+				p2++;
+			}
+			q++;
 		}
+		while(p1 <= k){
+			A_aux[q] = A[p1];
+			p1++;
+			q++;
+		}
+		while(p2 <= j){
+			A_aux[q] = A[p2];
+			p2++;
+			q++;
+		}
+		for(int n = 0; n < j-i+1; n++){
+			A[n+i] = A_aux[n];
+		}
+	}
+
+	void mergeSort(float *A, int i, int j){
+		int k = ((i + j)/2);
+		if(i < j){
+			mergeSort(A, i, k);
+			mergeSort(A, k + 1, j);
+			merge(A, i, j, k);
+		}
+	}
+
+	void mergeSort(float *A, int n){
+		mergeSort(A, 0, n-1);
 	}
 }
