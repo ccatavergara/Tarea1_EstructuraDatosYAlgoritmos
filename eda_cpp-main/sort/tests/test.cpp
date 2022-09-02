@@ -13,7 +13,7 @@ long getElapsedTime(std::chrono::time_point<std::chrono::high_resolution_clock> 
 void testSort(int max_size, int n_sizes){
 	int* sizes = sort::linspace(max_size, n_sizes);
 	float* A = nullptr;
-	int n = 0;
+	int n = 1000;
 	for (int i = 0; i < n_sizes; i++){
 		n = sizes[i];
 		A = sort::createRandomIntArray(n, 0, 100);

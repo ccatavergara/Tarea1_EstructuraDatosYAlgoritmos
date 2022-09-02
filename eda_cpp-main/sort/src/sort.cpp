@@ -79,7 +79,15 @@ namespace sort{
 		return k_smallest(A, 0, n-1, k);
 	}
 
+	void insertSort(int* A){
+		for(int i = 1; i< (sizeof(A)/sizeof(*A)); i++){
+			int elem = A[i];
+			int j = i - 1;
+			while( j > 0 && elem < A[j]){
+				A[j+1] = A[j];
+				j--;
+			}
+			A[j+1] = elem;
+		}
+	}
 }
-
-
-
