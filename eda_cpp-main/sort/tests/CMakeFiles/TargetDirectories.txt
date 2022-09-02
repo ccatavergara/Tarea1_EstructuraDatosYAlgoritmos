@@ -1,0 +1,3 @@
+/Users/catavergara/Desktop/estructura de datos/tarea1/eda_cpp-main/sort/tests/CMakeFiles/test.dir
+/Users/catavergara/Desktop/estructura de datos/tarea1/eda_cpp-main/sort/tests/CMakeFiles/edit_cache.dir
+/Users/catavergara/Desktop/estructura de datos/tarea1/eda_cpp-main/sort/tests/CMakeFiles/rebuild_cache.dir
