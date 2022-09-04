@@ -122,4 +122,19 @@ namespace sort{
 	void mergeSort(float *A, int n){
 		mergeSort(A, 0, n-1);
 	}
+
+	void insertSort(float *A, int n){
+		int i = 0;
+    	int j = 0;
+    	float elem = 0;
+    	for (i = 1; i < n; i++){
+			elem = A[i];
+			j = i-1;
+			while ((j >= 0) && (elem < A[j])){
+				A[j+1] = A[j];
+				j = j - 1;
+			}
+			A[j+1] = elem;
+    	}
+	}
 }

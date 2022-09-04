@@ -11,6 +11,7 @@ namespace sort {
 	void merge(float *A, int i, int j);
 	void mergeSort(float *A, int i, int j);
 	void mergeSort(float *A, int n);
+	void insertSort(float *A, int n);
 }
 
 #endif
