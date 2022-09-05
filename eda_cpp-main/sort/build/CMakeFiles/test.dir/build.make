@@ -56,7 +56,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = "/Users/catavergara/Desktop/estructura de datos/tarea1/eda_cpp-main/sort"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/Users/catavergara/Desktop/estructura de datos/tarea1/eda_cpp-main/sort/tests"
+CMAKE_BINARY_DIR = "/Users/catavergara/Desktop/estructura de datos/tarea1/eda_cpp-main/sort/build"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/test.dir/depend.make
@@ -69,24 +69,24 @@ include CMakeFiles/test.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/test.dir/flags.make
 
-CMakeFiles/test.dir/test.cpp.o: CMakeFiles/test.dir/flags.make
-CMakeFiles/test.dir/test.cpp.o: test.cpp
-CMakeFiles/test.dir/test.cpp.o: CMakeFiles/test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/catavergara/Desktop/estructura de datos/tarea1/eda_cpp-main/sort/tests/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/test.dir/test.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/test.cpp.o -MF CMakeFiles/test.dir/test.cpp.o.d -o CMakeFiles/test.dir/test.cpp.o -c "/Users/catavergara/Desktop/estructura de datos/tarea1/eda_cpp-main/sort/tests/test.cpp"
+CMakeFiles/test.dir/tests/test.cpp.o: CMakeFiles/test.dir/flags.make
+CMakeFiles/test.dir/tests/test.cpp.o: /Users/catavergara/Desktop/estructura\ de\ datos/tarea1/eda_cpp-main/sort/tests/test.cpp
+CMakeFiles/test.dir/tests/test.cpp.o: CMakeFiles/test.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/catavergara/Desktop/estructura de datos/tarea1/eda_cpp-main/sort/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/test.dir/tests/test.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/tests/test.cpp.o -MF CMakeFiles/test.dir/tests/test.cpp.o.d -o CMakeFiles/test.dir/tests/test.cpp.o -c "/Users/catavergara/Desktop/estructura de datos/tarea1/eda_cpp-main/sort/tests/test.cpp"
 
-CMakeFiles/test.dir/test.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/test.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/catavergara/Desktop/estructura de datos/tarea1/eda_cpp-main/sort/tests/test.cpp" > CMakeFiles/test.dir/test.cpp.i
+CMakeFiles/test.dir/tests/test.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/tests/test.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/catavergara/Desktop/estructura de datos/tarea1/eda_cpp-main/sort/tests/test.cpp" > CMakeFiles/test.dir/tests/test.cpp.i
 
-CMakeFiles/test.dir/test.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/test.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/catavergara/Desktop/estructura de datos/tarea1/eda_cpp-main/sort/tests/test.cpp" -o CMakeFiles/test.dir/test.cpp.s
+CMakeFiles/test.dir/tests/test.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/tests/test.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/catavergara/Desktop/estructura de datos/tarea1/eda_cpp-main/sort/tests/test.cpp" -o CMakeFiles/test.dir/tests/test.cpp.s
 
 CMakeFiles/test.dir/src/sort.cpp.o: CMakeFiles/test.dir/flags.make
 CMakeFiles/test.dir/src/sort.cpp.o: /Users/catavergara/Desktop/estructura\ de\ datos/tarea1/eda_cpp-main/sort/src/sort.cpp
 CMakeFiles/test.dir/src/sort.cpp.o: CMakeFiles/test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/catavergara/Desktop/estructura de datos/tarea1/eda_cpp-main/sort/tests/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/test.dir/src/sort.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/catavergara/Desktop/estructura de datos/tarea1/eda_cpp-main/sort/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/test.dir/src/sort.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/src/sort.cpp.o -MF CMakeFiles/test.dir/src/sort.cpp.o.d -o CMakeFiles/test.dir/src/sort.cpp.o -c "/Users/catavergara/Desktop/estructura de datos/tarea1/eda_cpp-main/sort/src/sort.cpp"
 
 CMakeFiles/test.dir/src/sort.cpp.i: cmake_force
@@ -100,7 +100,7 @@ CMakeFiles/test.dir/src/sort.cpp.s: cmake_force
 CMakeFiles/test.dir/src/utils.cpp.o: CMakeFiles/test.dir/flags.make
 CMakeFiles/test.dir/src/utils.cpp.o: /Users/catavergara/Desktop/estructura\ de\ datos/tarea1/eda_cpp-main/sort/src/utils.cpp
 CMakeFiles/test.dir/src/utils.cpp.o: CMakeFiles/test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/catavergara/Desktop/estructura de datos/tarea1/eda_cpp-main/sort/tests/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/test.dir/src/utils.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/catavergara/Desktop/estructura de datos/tarea1/eda_cpp-main/sort/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/test.dir/src/utils.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/src/utils.cpp.o -MF CMakeFiles/test.dir/src/utils.cpp.o.d -o CMakeFiles/test.dir/src/utils.cpp.o -c "/Users/catavergara/Desktop/estructura de datos/tarea1/eda_cpp-main/sort/src/utils.cpp"
 
 CMakeFiles/test.dir/src/utils.cpp.i: cmake_force
@@ -113,19 +113,19 @@ CMakeFiles/test.dir/src/utils.cpp.s: cmake_force
 
 # Object files for target test
 test_OBJECTS = \
-"CMakeFiles/test.dir/test.cpp.o" \
+"CMakeFiles/test.dir/tests/test.cpp.o" \
 "CMakeFiles/test.dir/src/sort.cpp.o" \
 "CMakeFiles/test.dir/src/utils.cpp.o"
 
 # External object files for target test
 test_EXTERNAL_OBJECTS =
 
-test: CMakeFiles/test.dir/test.cpp.o
+test: CMakeFiles/test.dir/tests/test.cpp.o
 test: CMakeFiles/test.dir/src/sort.cpp.o
 test: CMakeFiles/test.dir/src/utils.cpp.o
 test: CMakeFiles/test.dir/build.make
 test: CMakeFiles/test.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/catavergara/Desktop/estructura de datos/tarea1/eda_cpp-main/sort/tests/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/catavergara/Desktop/estructura de datos/tarea1/eda_cpp-main/sort/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable test"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -137,6 +137,6 @@ CMakeFiles/test.dir/clean:
 .PHONY : CMakeFiles/test.dir/clean
 
 CMakeFiles/test.dir/depend:
-	cd "/Users/catavergara/Desktop/estructura de datos/tarea1/eda_cpp-main/sort/tests" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/Users/catavergara/Desktop/estructura de datos/tarea1/eda_cpp-main/sort" "/Users/catavergara/Desktop/estructura de datos/tarea1/eda_cpp-main/sort" "/Users/catavergara/Desktop/estructura de datos/tarea1/eda_cpp-main/sort/tests" "/Users/catavergara/Desktop/estructura de datos/tarea1/eda_cpp-main/sort/tests" "/Users/catavergara/Desktop/estructura de datos/tarea1/eda_cpp-main/sort/tests/CMakeFiles/test.dir/DependInfo.cmake" --color=$(COLOR)
+	cd "/Users/catavergara/Desktop/estructura de datos/tarea1/eda_cpp-main/sort/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/Users/catavergara/Desktop/estructura de datos/tarea1/eda_cpp-main/sort" "/Users/catavergara/Desktop/estructura de datos/tarea1/eda_cpp-main/sort" "/Users/catavergara/Desktop/estructura de datos/tarea1/eda_cpp-main/sort/build" "/Users/catavergara/Desktop/estructura de datos/tarea1/eda_cpp-main/sort/build" "/Users/catavergara/Desktop/estructura de datos/tarea1/eda_cpp-main/sort/build/CMakeFiles/test.dir/DependInfo.cmake" --color=$(COLOR)
 .PHONY : CMakeFiles/test.dir/depend
 

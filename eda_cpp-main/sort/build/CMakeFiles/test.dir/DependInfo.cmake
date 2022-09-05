@@ -10,7 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/catavergara/Desktop/estructura de datos/tarea1/eda_cpp-main/sort/src/sort.cpp" "CMakeFiles/test.dir/src/sort.cpp.o" "gcc" "CMakeFiles/test.dir/src/sort.cpp.o.d"
   "/Users/catavergara/Desktop/estructura de datos/tarea1/eda_cpp-main/sort/src/utils.cpp" "CMakeFiles/test.dir/src/utils.cpp.o" "gcc" "CMakeFiles/test.dir/src/utils.cpp.o.d"
-  "/Users/catavergara/Desktop/estructura de datos/tarea1/eda_cpp-main/sort/tests/test.cpp" "CMakeFiles/test.dir/test.cpp.o" "gcc" "CMakeFiles/test.dir/test.cpp.o.d"
+  "/Users/catavergara/Desktop/estructura de datos/tarea1/eda_cpp-main/sort/tests/test.cpp" "CMakeFiles/test.dir/tests/test.cpp.o" "gcc" "CMakeFiles/test.dir/tests/test.cpp.o.d"
   )
 
 # Targets to which this target links.

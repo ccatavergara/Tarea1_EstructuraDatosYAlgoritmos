@@ -1,4 +1,4 @@
-CMakeFiles/test.dir/test.cpp.o: \
+CMakeFiles/test.dir/tests/test.cpp.o: \
   /Users/catavergara/Desktop/estructura\ de\ datos/tarea1/eda_cpp-main/sort/tests/test.cpp \
   /Users/catavergara/Desktop/estructura\ de\ datos/tarea1/eda_cpp-main/sort/include/sort/sort.hpp \
   /Users/catavergara/Desktop/estructura\ de\ datos/tarea1/eda_cpp-main/sort/include/sort/utils.hpp \

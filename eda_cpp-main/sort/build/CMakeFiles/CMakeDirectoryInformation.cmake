@@ -3,7 +3,7 @@
 
 # Relative path conversion top directories.
 set(CMAKE_RELATIVE_PATH_TOP_SOURCE "/Users/catavergara/Desktop/estructura de datos/tarea1/eda_cpp-main/sort")
-set(CMAKE_RELATIVE_PATH_TOP_BINARY "/Users/catavergara/Desktop/estructura de datos/tarea1/eda_cpp-main/sort/tests")
+set(CMAKE_RELATIVE_PATH_TOP_BINARY "/Users/catavergara/Desktop/estructura de datos/tarea1/eda_cpp-main/sort/build")
 
 # Force unix paths in dependencies.
 set(CMAKE_FORCE_UNIX_PATHS 1)
