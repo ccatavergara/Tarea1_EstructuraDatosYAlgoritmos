@@ -1,0 +1,1 @@
+/usr/bin/g++  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/test_s_q.dir/tests/test_stack_queue.cpp.o CMakeFiles/test_s_q.dir/src/node.cpp.o CMakeFiles/test_s_q.dir/src/stack.cpp.o CMakeFiles/test_s_q.dir/src/queue.cpp.o -o test_s_q 

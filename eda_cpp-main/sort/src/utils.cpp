@@ -12,6 +12,10 @@ namespace sort{
 		return new float[n];
 	}
 
+	int* createIntArray(int n){
+		return new int[n];
+	}
+
 	float* createRandomArray(int n){
 		float* A = createArray(n);
 		for (int i = 0; i < n; i++){
@@ -28,11 +32,31 @@ namespace sort{
 		return A;
 	}
 
+	int* createRandomIntArrayReal(int n, int minVal, int maxVal){
+		int* A = createIntArray(n);
+		for (int i = 0; i < n; i++){
+			A[i] = getRandomInt(minVal, maxVal);
+		}
+		return A;
+	}
+
+
 	void deleteArray(float* A){
 		delete[] A;
 	}
 
+	void deleteIntArray(int* A){
+		delete[] A;
+	}
+
 	void printArray(float* A, int n){
+		for (int i = 0; i < n; i++){
+			std::cout<<A[i]<<" ";
+		}
+		std::cout<<std::endl;
+	}
+
+	void printIntArray(int* A, int n){
 		for (int i = 0; i < n; i++){
 			std::cout<<A[i]<<" ";
 		}

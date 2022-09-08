@@ -108,6 +108,7 @@ namespace sort{
 		for(int n = 0; n < j-i+1; n++){
 			A[n+i] = A_aux[n];
 		}
+		delete A_aux;
 	}
 
 	void mergeSort(float *A, int i, int j){
@@ -136,5 +137,46 @@ namespace sort{
 			}
 			A[j+1] = elem;
     	}
+	}
+
+	int max_value(int *A, int n){
+		int max = 0;
+		for(int i = 0; i < n; i++){
+			if(max < A[i]) 
+				max = A[i];
+		}
+		return max;
+	}
+
+	void countSort(int *A, int n, int x){
+		int *output = new int(sizeof(n)); 
+		int *count = new int(sizeof(10));
+
+		for(int i = 0; i < n; i++){
+			count[(A[i] / x) % 10] ++;
+		}
+
+		for(int i = 1; i < 10; i++){
+			count[i] += count[i-1];
+		}
+
+		for(int i = n - 1; i >= 0; i-- ){
+			output[(count[(A[i] / x) % 10] - 1)] = A[i];
+			count[(A[i] / x) % 10] --;
+		}
+
+		for(int i = 0; i < n; i++){
+			A[i] = output[i];
+		}
+		delete count;
+		delete output;
+	}
+
+	void radixSort(int *A, int n){
+		int max = max_value(A, n);
+
+		for(int x = 1; max / x > 0; x *= 10){
+			countSort(A, n, x);
+		}
 	}
 }

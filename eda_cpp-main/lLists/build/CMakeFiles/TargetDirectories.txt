@@ -1,0 +1,4 @@
+/Users/catavergara/Desktop/estructura de datos/tarea1/eda_cpp-main/lLists/build/CMakeFiles/test.dir
+/Users/catavergara/Desktop/estructura de datos/tarea1/eda_cpp-main/lLists/build/CMakeFiles/test_s_q.dir
+/Users/catavergara/Desktop/estructura de datos/tarea1/eda_cpp-main/lLists/build/CMakeFiles/edit_cache.dir
+/Users/catavergara/Desktop/estructura de datos/tarea1/eda_cpp-main/lLists/build/CMakeFiles/rebuild_cache.dir
