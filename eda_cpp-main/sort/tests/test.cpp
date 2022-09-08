@@ -10,8 +10,8 @@ long getElapsedTime(std::chrono::time_point<std::chrono::high_resolution_clock> 
 	return static_cast<long>(int_ms.count());
 }
 
-//First testing
-//------------------------------------------
+// // First testing
+// // ------------------------------------------
 // void testSort(int max_size, int n_sizes){
 // 	int* sizes = sort::linspace(max_size, n_sizes);
 // 	float* A = nullptr;
@@ -19,10 +19,10 @@ long getElapsedTime(std::chrono::time_point<std::chrono::high_resolution_clock> 
 	
 // 	for (int i = 0; i < n_sizes; i++){
 // 		n = sizes[i];
-// 		A = sort::createRandomIntArray(n, 0, 100);
+// 		A = sort::createRandomIntArray(n, 0, 100000);
 // 		auto start = std::chrono::high_resolution_clock::now();
 // 		//change the sort method here
-// 		sort::selectionSort(A,n);
+// 		sort::mergeSort(A,n);
 // 		//
 // 		auto end = std::chrono::high_resolution_clock::now();
 // 		long elapsed =  getElapsedTime(start, end);
@@ -31,6 +31,7 @@ long getElapsedTime(std::chrono::time_point<std::chrono::high_resolution_clock> 
 // 	}
 // 	delete[] sizes;
 // }
+
 
 // Comparing with RadixSort
 void testSort(int max_size, int n_sizes){
@@ -43,7 +44,7 @@ void testSort(int max_size, int n_sizes){
 		A = sort::createRandomIntArrayReal(n, 0, 100000);
 		auto start = std::chrono::high_resolution_clock::now();
 		//change the sort method here
-		// sort::quickSort(A,n);
+		// sort::mergeSort(A,n);
 		sort::radixSort(A,n);
 		//
 		auto end = std::chrono::high_resolution_clock::now();
@@ -57,7 +58,7 @@ void testSort(int max_size, int n_sizes){
 int main(int nargs, char** nvargs){
 	int n_sizes = 10;
 	int max_size = 1000000;
-	std::cout << "QuickSort 1.000.000" << std::endl;
+	std::cout << "RadixSort 1.000.000 comparacion" << std::endl;
 	testSort(max_size, n_sizes);
 	return 0;
 }
